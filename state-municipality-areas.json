@@ -1,0 +1,460 @@
+[
+  {
+    "Name": "Damascus",
+    "NameAr": "دمشق",
+    "Value": "DAMASCUS",
+    "Delegations": [
+      {
+        "Name": "Old Damascus (Al-Hamidiyah Souq)",
+        "NameAr": "دمشق القديمة (سوق الحميدية)",
+        "Value": "Old Damascus",
+        "PostalCode": "SY010101",
+        "Latitude": 33.5105,
+        "Longitude": 36.3008
+      },
+      {
+        "Name": "Old Damascus (Umayyad Mosque)",
+        "NameAr": "دمشق القديمة (الجامع الأموي)",
+        "Value": "Old Damascus",
+        "PostalCode": "SY010102",
+        "Latitude": 33.5115,
+        "Longitude": 36.3065
+      },
+      {
+        "Name": "Midan (Al-Qa'a Neighborhood)",
+        "NameAr": "الميدان (حي القاعة)",
+        "Value": "Midan",
+        "PostalCode": "SY010201",
+        "Latitude": 33.4950,
+        "Longitude": 36.3020
+      },
+      {
+        "Name": "Mazzeh (Mazzeh Villas West)",
+        "NameAr": "المزة (المزة فيلات غربية)",
+        "Value": "Mazzeh",
+        "PostalCode": "SY010301",
+        "Latitude": 33.5010,
+        "Longitude": 36.2480
+      },
+      {
+        "Name": "Kafr Souseh (Municipality Center)",
+        "NameAr": "كفر سوسة (مركز البلدية)",
+        "Value": "Kafr Souseh",
+        "PostalCode": "SY010401",
+        "Latitude": 33.4980,
+        "Longitude": 36.2690
+      }
+    ]
+  },
+  {
+    "Name": "Rural Damascus",
+    "NameAr": "ريف دمشق",
+    "Value": "RURAL_DAMASCUS",
+    "Delegations": [
+      {
+        "Name": "Douma (City Center)",
+        "NameAr": "دوما (مركز المدينة)",
+        "Value": "Douma",
+        "PostalCode": "SY020101",
+        "Latitude": 33.5713,
+        "Longitude": 36.4033
+      },
+      {
+        "Name": "Harasta (Harasta Al-Basal)",
+        "NameAr": "حرستا (حرستا البصل)",
+        "Value": "Harasta",
+        "PostalCode": "SY020201",
+        "Latitude": 33.5580,
+        "Longitude": 36.3660
+      },
+      {
+        "Name": "Jaramana (Al-Kabbas)",
+        "NameAr": "جرمانا (الكباس)",
+        "Value": "Jaramana",
+        "PostalCode": "SY020301",
+        "Latitude": 33.4800,
+        "Longitude": 36.3520
+      },
+      {
+        "Name": "Qudsaya (New Qudsaya)",
+        "NameAr": "قدسيا (قدسيا الجديدة)",
+        "Value": "Qudsaya",
+        "PostalCode": "SY020401",
+        "Latitude": 33.5680,
+        "Longitude": 36.2290
+      }
+    ]
+  },
+  {
+    "Name": "Aleppo",
+    "NameAr": "حلب",
+    "Value": "ALEPPO",
+    "Delegations": [
+      {
+        "Name": "Aleppo City (Citadel of Aleppo)",
+        "NameAr": "مدينة حلب (قلعة حلب)",
+        "Value": "Aleppo City",
+        "PostalCode": "SY030101",
+        "Latitude": 36.1985,
+        "Longitude": 37.1620
+      },
+      {
+        "Name": "Aleppo City (Al-Jdayde)",
+        "NameAr": "مدينة حلب (الجديدة)",
+        "Value": "Aleppo City",
+        "PostalCode": "SY030102",
+        "Latitude": 36.2050,
+        "Longitude": 37.1580
+      },
+      {
+        "Name": "Al-Bab (City Center)",
+        "NameAr": "الباب (مركز المدينة)",
+        "Value": "Al-Bab",
+        "PostalCode": "SY030201",
+        "Latitude": 36.3719,
+        "Longitude": 37.5166
+      },
+      {
+        "Name": "Afrin (Downtown)",
+        "NameAr": "عفرين (وسط المدينة)",
+        "Value": "Afrin",
+        "PostalCode": "SY030301",
+        "Latitude": 36.5119,
+        "Longitude": 36.8694
+      }
+    ]
+  },
+  {
+    "Name": "Homs",
+    "NameAr": "حمص",
+    "Value": "HOMS",
+    "Delegations": [
+      {
+        "Name": "Homs City (Bab al-Siba'a)",
+        "NameAr": "مدينة حمص (باب السباع)",
+        "Value": "Homs City",
+        "PostalCode": "SY040101",
+        "Latitude": 34.7280,
+        "Longitude": 36.7120
+      },
+      {
+        "Name": "Homs City (Old City)",
+        "NameAr": "مدينة حمص (المدينة القديمة)",
+        "Value": "Homs City",
+        "PostalCode": "SY040102",
+        "Latitude": 34.7320,
+        "Longitude": 36.7180
+      },
+      {
+        "Name": "Talkalakh (City Center)",
+        "NameAr": "تلكلخ (مركز المدينة)",
+        "Value": "Talkalakh",
+        "PostalCode": "SY040201",
+        "Latitude": 34.6684,
+        "Longitude": 36.2622
+      }
+    ]
+  },
+  {
+    "Name": "Hama",
+    "NameAr": "حماة",
+    "Value": "HAMA",
+    "Delegations": [
+      {
+        "Name": "Hama City (Norias)",
+        "NameAr": "مدينة حماة (النواعير)",
+        "Value": "Hama City",
+        "PostalCode": "SY050101",
+        "Latitude": 35.1352,
+        "Longitude": 36.7565
+      },
+      {
+        "Name": "Hama City (Al-Hadir)",
+        "NameAr": "مدينة حماة (الحاضر)",
+        "Value": "Hama City",
+        "PostalCode": "SY050102",
+        "Latitude": 35.1400,
+        "Longitude": 36.7520
+      },
+      {
+        "Name": "Salamiyah (City Center)",
+        "NameAr": "سلمية (مركز المدينة)",
+        "Value": "Salamiyah",
+        "PostalCode": "SY050201",
+        "Latitude": 35.0113,
+        "Longitude": 37.0532
+      }
+    ]
+  },
+  {
+    "Name": "Latakia",
+    "NameAr": "اللاذقية",
+    "Value": "LATAKIA",
+    "Delegations": [
+      {
+        "Name": "Latakia City (Corniche)",
+        "NameAr": "مدينة اللاذقية (الكورنيش)",
+        "Value": "Latakia City",
+        "PostalCode": "SY060101",
+        "Latitude": 35.5225,
+        "Longitude": 35.7915
+      },
+      {
+        "Name": "Latakia City (City Center)",
+        "NameAr": "مدينة اللاذقية (وسط المدينة)",
+        "Value": "Latakia City",
+        "PostalCode": "SY060102",
+        "Latitude": 35.5300,
+        "Longitude": 35.7800
+      },
+      {
+        "Name": "Jableh (City Center)",
+        "NameAr": "جبلة (مركز المدينة)",
+        "Value": "Jableh",
+        "PostalCode": "SY060201",
+        "Latitude": 35.3613,
+        "Longitude": 35.9276
+      }
+    ]
+  },
+  {
+    "Name": "Idlib",
+    "NameAr": "إدلب",
+    "Value": "IDLIB",
+    "Delegations": [
+      {
+        "Name": "Ariha (Ariha Center)",
+        "NameAr": "أريحا (مركز أريحا)",
+        "Value": "Ariha",
+        "PostalCode": "SY070500",
+        "Latitude": 35.839457494000044,
+        "Longitude": 36.711938306000036
+      },
+      {
+        "Name": "Idlib City (City Center)",
+        "NameAr": "مدينة إدلب (مركز المدينة)",
+        "Value": "Idlib City",
+        "PostalCode": "SY070101",
+        "Latitude": 35.9306,
+        "Longitude": 36.6339
+      },
+      {
+        "Name": "Maarat al-Numan (City Center)",
+        "NameAr": "معرة النعمان (مركز المدينة)",
+        "Value": "Maarat al-Numan",
+        "PostalCode": "SY070201",
+        "Latitude": 35.6482,
+        "Longitude": 36.6778
+      }
+    ]
+  },
+  {
+    "Name": "Tartus",
+    "NameAr": "طرطوس",
+    "Value": "TARTUS",
+    "Delegations": [
+      {
+        "Name": "Tartus City (Corniche)",
+        "NameAr": "مدينة طرطوس (الكورنيش)",
+        "Value": "Tartus City",
+        "PostalCode": "SY080101",
+        "Latitude": 34.8900,
+        "Longitude": 35.8866
+      },
+      {
+        "Name": "Tartus City (City Center)",
+        "NameAr": "مدينة طرطوس (وسط المدينة)",
+        "Value": "Tartus City",
+        "PostalCode": "SY080102",
+        "Latitude": 34.8920,
+        "Longitude": 35.8880
+      },
+      {
+        "Name": "Banias (City Center)",
+        "NameAr": "بانياس (مركز المدينة)",
+        "Value": "Banias",
+        "PostalCode": "SY080201",
+        "Latitude": 35.1818,
+        "Longitude": 35.9487
+      }
+    ]
+  },
+  {
+    "Name": "Deir ez-Zor",
+    "NameAr": "دير الزور",
+    "Value": "DEIR_EZ_ZOR",
+    "Delegations": [
+      {
+        "Name": "Deir ez-Zor City (City Center)",
+        "NameAr": "مدينة دير الزور (مركز المدينة)",
+        "Value": "Deir ez-Zor City",
+        "PostalCode": "SY090101",
+        "Latitude": 35.3359,
+        "Longitude": 40.1408
+      },
+      {
+        "Name": "Al-Mayadin (City Center)",
+        "NameAr": "الميادين (مركز المدينة)",
+        "Value": "Al-Mayadin",
+        "PostalCode": "SY090201",
+        "Latitude": 35.0198,
+        "Longitude": 40.4519
+      },
+      {
+        "Name": "Abu Kamal (City Center)",
+        "NameAr": "البوكمال (مركز المدينة)",
+        "Value": "Abu Kamal",
+        "PostalCode": "SY090301",
+        "Latitude": 34.4523,
+        "Longitude": 40.9186
+      }
+    ]
+  },
+  {
+    "Name": "Al-Hasakah",
+    "NameAr": "الحسكة",
+    "Value": "AL_HASAKAH",
+    "Delegations": [
+      {
+        "Name": "Al-Hasakah City (City Center)",
+        "NameAr": "مدينة الحسكة (مركز المدينة)",
+        "Value": "Al-Hasakah City",
+        "PostalCode": "SY100101",
+        "Latitude": 36.5024,
+        "Longitude": 40.7476
+      },
+      {
+        "Name": "Qamishli (City Center)",
+        "NameAr": "القامشلي (مركز المدينة)",
+        "Value": "Qamishli",
+        "PostalCode": "SY100201",
+        "Latitude": 37.0505,
+        "Longitude": 41.2246
+      },
+      {
+        "Name": "Al-Malikiyah (City Center)",
+        "NameAr": "المالكية (مركز المدينة)",
+        "Value": "Al-Malikiyah",
+        "PostalCode": "SY100301",
+        "Latitude": 37.1780,
+        "Longitude": 42.1400
+      }
+    ]
+  },
+  {
+    "Name": "Raqqa",
+    "NameAr": "الرقة",
+    "Value": "RAQQA",
+    "Delegations": [
+      {
+        "Name": "Raqqa City (City Center)",
+        "NameAr": "مدينة الرقة (مركز المدينة)",
+        "Value": "Raqqa City",
+        "PostalCode": "SY110101",
+        "Latitude": 35.9500,
+        "Longitude": 39.0100
+      },
+      {
+        "Name": "Raqqa City (Al-Mansour)",
+        "NameAr": "مدينة الرقة (المنصور)",
+        "Value": "Raqqa City",
+        "PostalCode": "SY110102",
+        "Latitude": 35.9550,
+        "Longitude": 39.0050
+      },
+      {
+        "Name": "Al-Thawrah (City Center)",
+        "NameAr": "الثورة (مركز المدينة)",
+        "Value": "Al-Thawrah",
+        "PostalCode": "SY110201",
+        "Latitude": 35.8376,
+        "Longitude": 38.5483
+      }
+    ]
+  },
+  {
+    "Name": "Daraa",
+    "NameAr": "درعا",
+    "Value": "DARAA",
+    "Delegations": [
+      {
+        "Name": "Daraa City (City Center)",
+        "NameAr": "مدينة درعا (مركز المدينة)",
+        "Value": "Daraa City",
+        "PostalCode": "SY120101",
+        "Latitude": 32.6190,
+        "Longitude": 36.1020
+      },
+      {
+        "Name": "Daraa City (Daraa Al-Balad)",
+        "NameAr": "مدينة درعا (درعا البلد)",
+        "Value": "Daraa City",
+        "PostalCode": "SY120102",
+        "Latitude": 32.6150,
+        "Longitude": 36.1050
+      },
+      {
+        "Name": "Nawa (City Center)",
+        "NameAr": "نوى (مركز المدينة)",
+        "Value": "Nawa",
+        "PostalCode": "SY120201",
+        "Latitude": 32.8867,
+        "Longitude": 36.0339
+      }
+    ]
+  },
+  {
+    "Name": "As-Suwayda",
+    "NameAr": "السويداء",
+    "Value": "AS_SUWAYDA",
+    "Delegations": [
+      {
+        "Name": "As-Suwayda City (City Center)",
+        "NameAr": "مدينة السويداء (مركز المدينة)",
+        "Value": "As-Suwayda City",
+        "PostalCode": "SY130101",
+        "Latitude": 32.7100,
+        "Longitude": 36.5700
+      },
+      {
+        "Name": "Shahba (City Center)",
+        "NameAr": "شهبا (مركز المدينة)",
+        "Value": "Shahba",
+        "PostalCode": "SY130201",
+        "Latitude": 32.8522,
+        "Longitude": 36.6290
+      },
+      {
+        "Name": "Salkhad (City Center)",
+        "NameAr": "صلخد (مركز المدينة)",
+        "Value": "Salkhad",
+        "PostalCode": "SY130301",
+        "Latitude": 32.4933,
+        "Longitude": 36.7144
+      }
+    ]
+  },
+  {
+    "Name": "Quneitra",
+    "NameAr": "القنيطرة",
+    "Value": "QUNEITRA",
+    "Delegations": [
+      {
+        "Name": "Quneitra (New Quneitra)",
+        "NameAr": "القنيطرة (القنيطرة الجديدة)",
+        "Value": "Quneitra",
+        "PostalCode": "SY140101",
+        "Latitude": 33.1260,
+        "Longitude": 36.0640
+      },
+      {
+        "Name": "Khan Arnabah (City Center)",
+        "NameAr": "خان أرنبة (مركز المدينة)",
+        "Value": "Khan Arnabah",
+        "PostalCode": "SY140201",
+        "Latitude": 33.0100,
+        "Longitude": 36.0000
+      }
+    ]
+  }
+]
