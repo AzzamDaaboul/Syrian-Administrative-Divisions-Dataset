@@ -1,0 +1,511 @@
+[
+  {
+    "Name": "Damascus",
+    "NameAr": "دمشق",
+    "Code": "DI",
+    "ISO3166_2": "SY-DI",
+    "Capital": "Damascus",
+    "CapitalAr": "دمشق",
+    "Area_km2": 105,
+    "Population": 2079000,
+    "PopulationYear": 2019,
+    "PhoneCode": "011",
+    "Districts": [
+      {
+        "Name": "Damascus City",
+        "NameAr": "مدينة دمشق",
+        "Population": 2079000
+      }
+    ],
+    "Description": "The capital and largest city of Syria, Damascus is one of the oldest continuously inhabited cities in the world.",
+    "DescriptionAr": "العاصمة وأكبر مدينة في سوريا، دمشق هي واحدة من أقدم المدن المأهولة بالسكان باستمرار في العالم."
+  },
+  {
+    "Name": "Rural Damascus",
+    "NameAr": "ريف دمشق",
+    "Code": "RD",
+    "ISO3166_2": "SY-RD",
+    "Capital": "Douma",
+    "CapitalAr": "دوما",
+    "Area_km2": 18032,
+    "Population": 2836000,
+    "PopulationYear": 2019,
+    "PhoneCode": "011",
+    "Districts": [
+      {
+        "Name": "Douma",
+        "NameAr": "دوما",
+        "Population": 500000
+      },
+      {
+        "Name": "Darayya",
+        "NameAr": "داريا",
+        "Population": 225000
+      },
+      {
+        "Name": "Al-Tall",
+        "NameAr": "التل",
+        "Population": 150000
+      },
+      {
+        "Name": "Qalamoun",
+        "NameAr": "القلمون",
+        "Population": 200000
+      },
+      {
+        "Name": "Az-Zabadani",
+        "NameAr": "الزبداني",
+        "Population": 100000
+      }
+    ],
+    "Description": "Rural Damascus governorate surrounds the capital and includes agricultural areas, mountains, and important suburbs.",
+    "DescriptionAr": "محافظة ريف دمشق تحيط بالعاصمة وتشمل المناطق الزراعية والجبال والضواحي المهمة."
+  },
+  {
+    "Name": "Aleppo",
+    "NameAr": "حلب",
+    "Code": "HL",
+    "ISO3166_2": "SY-HL",
+    "Capital": "Aleppo",
+    "CapitalAr": "حلب",
+    "Area_km2": 18482,
+    "Population": 4868000,
+    "PopulationYear": 2019,
+    "PhoneCode": "021",
+    "Districts": [
+      {
+        "Name": "Mount Simeon",
+        "NameAr": "جبل سمعان",
+        "Population": 2500000
+      },
+      {
+        "Name": "Afrin",
+        "NameAr": "عفرين",
+        "Population": 450000
+      },
+      {
+        "Name": "Al-Bab",
+        "NameAr": "الباب",
+        "Population": 380000
+      },
+      {
+        "Name": "Azaz",
+        "NameAr": "أعزاز",
+        "Population": 320000
+      },
+      {
+        "Name": "Manbij",
+        "NameAr": "منبج",
+        "Population": 400000
+      },
+      {
+        "Name": "Jarabulus",
+        "NameAr": "جرابلس",
+        "Population": 100000
+      },
+      {
+        "Name": "As-Safira",
+        "NameAr": "السفيرة",
+        "Population": 150000
+      }
+    ],
+    "Description": "Aleppo is one of the oldest continuously inhabited cities and was Syria's largest city and economic center before the civil war.",
+    "DescriptionAr": "حلب هي واحدة من أقدم المدن المأهولة بالسكان باستمرار وكانت أكبر مدينة سورية ومركزها الاقتصادي قبل الحرب الأهلية."
+  },
+  {
+    "Name": "Homs",
+    "NameAr": "حمص",
+    "Code": "HM",
+    "ISO3166_2": "SY-HM",
+    "Capital": "Homs",
+    "CapitalAr": "حمص",
+    "Area_km2": 42223,
+    "Population": 1803000,
+    "PopulationYear": 2019,
+    "PhoneCode": "031",
+    "Districts": [
+      {
+        "Name": "Homs",
+        "NameAr": "حمص",
+        "Population": 800000
+      },
+      {
+        "Name": "Tadmur (Palmyra)",
+        "NameAr": "تدمر",
+        "Population": 100000
+      },
+      {
+        "Name": "Al-Qusayr",
+        "NameAr": "القصير",
+        "Population": 90000
+      },
+      {
+        "Name": "Ar-Rastan",
+        "NameAr": "الرستن",
+        "Population": 140000
+      },
+      {
+        "Name": "Talkalakh",
+        "NameAr": "تلكلخ",
+        "Population": 80000
+      }
+    ],
+    "Description": "Homs is centrally located and historically served as a major industrial center and transportation hub.",
+    "DescriptionAr": "حمص تقع في موقع مركزي وتاريخياً كانت مركزاً صناعياً رئيسياً ومحور نقل."
+  },
+  {
+    "Name": "Hama",
+    "NameAr": "حماة",
+    "Code": "HI",
+    "ISO3166_2": "SY-HI",
+    "Capital": "Hama",
+    "CapitalAr": "حماة",
+    "Area_km2": 8883,
+    "Population": 1628000,
+    "PopulationYear": 2019,
+    "PhoneCode": "033",
+    "Districts": [
+      {
+        "Name": "Hama",
+        "NameAr": "حماة",
+        "Population": 700000
+      },
+      {
+        "Name": "Masyaf",
+        "NameAr": "مصياف",
+        "Population": 190000
+      },
+      {
+        "Name": "As-Salamiyah",
+        "NameAr": "السلمية",
+        "Population": 350000
+      },
+      {
+        "Name": "As-Suqaylabiyah",
+        "NameAr": "السقيلبية",
+        "Population": 140000
+      },
+      {
+        "Name": "Muhradah",
+        "NameAr": "محردة",
+        "Population": 80000
+      }
+    ],
+    "Description": "Hama is known for its historic norias (water wheels) and is a major agricultural center.",
+    "DescriptionAr": "حماة معروفة بنواعيرها التاريخية (السواقي المائية) وهي مركز زراعي رئيسي."
+  },
+  {
+    "Name": "Latakia",
+    "NameAr": "اللاذقية",
+    "Code": "LA",
+    "ISO3166_2": "SY-LA",
+    "Capital": "Latakia",
+    "CapitalAr": "اللاذقية",
+    "Area_km2": 2297,
+    "Population": 1008000,
+    "PopulationYear": 2019,
+    "PhoneCode": "041",
+    "Districts": [
+      {
+        "Name": "Latakia",
+        "NameAr": "اللاذقية",
+        "Population": 550000
+      },
+      {
+        "Name": "Jableh",
+        "NameAr": "جبلة",
+        "Population": 250000
+      },
+      {
+        "Name": "Al-Haffah",
+        "NameAr": "الحفة",
+        "Population": 100000
+      },
+      {
+        "Name": "Qardaha",
+        "NameAr": "القرداحة",
+        "Population": 80000
+      }
+    ],
+    "Description": "Latakia is Syria's principal port city on the Mediterranean coast and a major tourist destination.",
+    "DescriptionAr": "اللاذقية هي المدينة الميناء الرئيسية لسوريا على ساحل البحر الأبيض المتوسط ووجهة سياحية رئيسية."
+  },
+  {
+    "Name": "Tartus",
+    "NameAr": "طرطوس",
+    "Code": "TA",
+    "ISO3166_2": "SY-TA",
+    "Capital": "Tartus",
+    "CapitalAr": "طرطوس",
+    "Area_km2": 1890,
+    "Population": 797000,
+    "PopulationYear": 2019,
+    "PhoneCode": "043",
+    "Districts": [
+      {
+        "Name": "Tartus",
+        "NameAr": "طرطوس",
+        "Population": 320000
+      },
+      {
+        "Name": "Baniyas",
+        "NameAr": "بانياس",
+        "Population": 190000
+      },
+      {
+        "Name": "Safita",
+        "NameAr": "صافيتا",
+        "Population": 110000
+      },
+      {
+        "Name": "Duraykish",
+        "NameAr": "دريكيش",
+        "Population": 90000
+      },
+      {
+        "Name": "Al-Shaykh Badr",
+        "NameAr": "الشيخ بدر",
+        "Population": 60000
+      }
+    ],
+    "Description": "Tartus is a coastal city and Syria's second port, known for its beaches and the historic Arwad Island.",
+    "DescriptionAr": "طرطوس مدينة ساحلية وميناء سوريا الثاني، معروفة بشواطئها وجزيرة أرواد التاريخية."
+  },
+  {
+    "Name": "Idlib",
+    "NameAr": "إدلب",
+    "Code": "ID",
+    "ISO3166_2": "SY-ID",
+    "Capital": "Idlib",
+    "CapitalAr": "إدلب",
+    "Area_km2": 6097,
+    "Population": 1501000,
+    "PopulationYear": 2019,
+    "PhoneCode": "023",
+    "Districts": [
+      {
+        "Name": "Idlib",
+        "NameAr": "إدلب",
+        "Population": 450000
+      },
+      {
+        "Name": "Jisr ash-Shughur",
+        "NameAr": "جسر الشغور",
+        "Population": 150000
+      },
+      {
+        "Name": "Ariha",
+        "NameAr": "أريحا",
+        "Population": 180000
+      },
+      {
+        "Name": "Ma'arrat an-Nu'man",
+        "NameAr": "معرة النعمان",
+        "Population": 220000
+      },
+      {
+        "Name": "Harim",
+        "NameAr": "حارم",
+        "Population": 120000
+      }
+    ],
+    "Description": "Idlib is located in northwestern Syria and is known for its agricultural production, especially olives.",
+    "DescriptionAr": "إدلب تقع في شمال غرب سوريا ومعروفة بإنتاجها الزراعي، خاصة الزيتون."
+  },
+  {
+    "Name": "Deir ez-Zor",
+    "NameAr": "دير الزور",
+    "Code": "DY",
+    "ISO3166_2": "SY-DY",
+    "Capital": "Deir ez-Zor",
+    "CapitalAr": "دير الزور",
+    "Area_km2": 33060,
+    "Population": 1239000,
+    "PopulationYear": 2019,
+    "PhoneCode": "051",
+    "Districts": [
+      {
+        "Name": "Deir ez-Zor",
+        "NameAr": "دير الزور",
+        "Population": 500000
+      },
+      {
+        "Name": "Al-Mayadin",
+        "NameAr": "الميادين",
+        "Population": 150000
+      },
+      {
+        "Name": "Abu Kamal",
+        "NameAr": "البوكمال",
+        "Population": 180000
+      },
+      {
+        "Name": "Al-Quriyah",
+        "NameAr": "القورية",
+        "Population": 100000
+      }
+    ],
+    "Description": "Deir ez-Zor is located on the Euphrates River in eastern Syria, historically important for agriculture and oil production.",
+    "DescriptionAr": "دير الزور تقع على نهر الفرات في شرق سوريا، وهي مهمة تاريخياً للزراعة وإنتاج النفط."
+  },
+  {
+    "Name": "Raqqa",
+    "NameAr": "الرقة",
+    "Code": "RA",
+    "ISO3166_2": "SY-RA",
+    "Capital": "Raqqa",
+    "CapitalAr": "الرقة",
+    "Area_km2": 19616,
+    "Population": 944000,
+    "PopulationYear": 2019,
+    "PhoneCode": "022",
+    "Districts": [
+      {
+        "Name": "Raqqa",
+        "NameAr": "الرقة",
+        "Population": 450000
+      },
+      {
+        "Name": "Tell Abyad",
+        "NameAr": "تل أبيض",
+        "Population": 200000
+      },
+      {
+        "Name": "Thawrah",
+        "NameAr": "الثورة",
+        "Population": 150000
+      }
+    ],
+    "Description": "Raqqa is situated on the Euphrates River and historically served as the Abbasid capital for a period.",
+    "DescriptionAr": "الرقة تقع على نهر الفرات وكانت تاريخياً عاصمة للعباسيين لفترة من الزمن."
+  },
+  {
+    "Name": "Al-Hasakah",
+    "NameAr": "الحسكة",
+    "Code": "HA",
+    "ISO3166_2": "SY-HA",
+    "Capital": "Al-Hasakah",
+    "CapitalAr": "الحسكة",
+    "Area_km2": 23334,
+    "Population": 1512000,
+    "PopulationYear": 2019,
+    "PhoneCode": "052",
+    "Districts": [
+      {
+        "Name": "Al-Hasakah",
+        "NameAr": "الحسكة",
+        "Population": 400000
+      },
+      {
+        "Name": "Qamishli",
+        "NameAr": "القامشلي",
+        "Population": 450000
+      },
+      {
+        "Name": "Ras al-Ayn",
+        "NameAr": "رأس العين",
+        "Population": 180000
+      },
+      {
+        "Name": "Al-Malikiyah",
+        "NameAr": "المالكية",
+        "Population": 150000
+      },
+      {
+        "Name": "Amuda",
+        "NameAr": "عامودا",
+        "Population": 120000
+      }
+    ],
+    "Description": "Al-Hasakah is located in northeastern Syria and is known for its agricultural production, especially wheat and cotton.",
+    "DescriptionAr": "الحسكة تقع في شمال شرق سوريا ومعروفة بإنتاجها الزراعي، خاصة القمح والقطن."
+  },
+  {
+    "Name": "Daraa",
+    "NameAr": "درعا",
+    "Code": "DR",
+    "ISO3166_2": "SY-DR",
+    "Capital": "Daraa",
+    "CapitalAr": "درعا",
+    "Area_km2": 3730,
+    "Population": 1027000,
+    "PopulationYear": 2019,
+    "PhoneCode": "015",
+    "Districts": [
+      {
+        "Name": "Daraa",
+        "NameAr": "درعا",
+        "Population": 400000
+      },
+      {
+        "Name": "Izra",
+        "NameAr": "إزرع",
+        "Population": 200000
+      },
+      {
+        "Name": "As-Sanamayn",
+        "NameAr": "الصنمين",
+        "Population": 180000
+      }
+    ],
+    "Description": "Daraa is located in southern Syria near the Jordanian border and is historically significant as an agricultural center.",
+    "DescriptionAr": "درعا تقع في جنوب سوريا بالقرب من الحدود الأردنية وذات أهمية تاريخية كمركز زراعي."
+  },
+  {
+    "Name": "As-Suwayda",
+    "NameAr": "السويداء",
+    "Code": "SU",
+    "ISO3166_2": "SY-SU",
+    "Capital": "As-Suwayda",
+    "CapitalAr": "السويداء",
+    "Area_km2": 5550,
+    "Population": 370000,
+    "PopulationYear": 2019,
+    "PhoneCode": "016",
+    "Districts": [
+      {
+        "Name": "As-Suwayda",
+        "NameAr": "السويداء",
+        "Population": 180000
+      },
+      {
+        "Name": "Shahba",
+        "NameAr": "شهبا",
+        "Population": 90000
+      },
+      {
+        "Name": "Salkhad",
+        "NameAr": "صلخد",
+        "Population": 80000
+      }
+    ],
+    "Description": "As-Suwayda is located in southern Syria in the Jabal al-Druze mountain region, known for its Druze population.",
+    "DescriptionAr": "السويداء تقع في جنوب سوريا في منطقة جبل الدروز الجبلية، معروفة بسكانها الدروز."
+  },
+  {
+    "Name": "Quneitra",
+    "NameAr": "القنيطرة",
+    "Code": "QU",
+    "ISO3166_2": "SY-QU",
+    "Capital": "Quneitra",
+    "CapitalAr": "القنيطرة",
+    "Area_km2": 1861,
+    "Population": 90000,
+    "PopulationYear": 2019,
+    "PhoneCode": "014",
+    "Districts": [
+      {
+        "Name": "Quneitra",
+        "NameAr": "القنيطرة",
+        "Population": 45000
+      },
+      {
+        "Name": "Fiq",
+        "NameAr": "فيق",
+        "Population": 25000
+      }
+    ],
+    "Description": "Quneitra is located near the Golan Heights border and has been significantly affected by regional conflicts.",
+    "DescriptionAr": "القنيطرة تقع بالقرب من الحدود مع هضبة الجولان وقد تأثرت بشكل كبير بالنزاعات الإقليمية."
+  }
+]

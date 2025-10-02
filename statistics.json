@@ -1,0 +1,209 @@
+{
+  "statistics": {
+    "totalArea_km2": 185180,
+    "totalPopulation": 21624000,
+    "populationYear": 2019,
+    "numberOfGovernorates": 14,
+    "numberOfDistricts": 65,
+    "numberOfMunicipalities": 67,
+    "largestGovernorateByArea": {
+      "name": "Homs",
+      "nameAr": "حمص",
+      "area_km2": 42223
+    },
+    "smallestGovernorateByArea": {
+      "name": "Damascus",
+      "nameAr": "دمشق",
+      "area_km2": 105
+    },
+    "largestGovernorateByPopulation": {
+      "name": "Aleppo",
+      "nameAr": "حلب",
+      "population": 4868000
+    },
+    "smallestGovernorateByPopulation": {
+      "name": "Quneitra",
+      "nameAr": "القنيطرة",
+      "population": 90000
+    },
+    "mostDenselyPopulated": {
+      "name": "Damascus",
+      "nameAr": "دمشق",
+      "density_per_km2": 19800
+    },
+    "leastDenselyPopulated": {
+      "name": "Deir ez-Zor",
+      "nameAr": "دير الزور",
+      "density_per_km2": 37
+    },
+    "coastalGovernorates": [
+      {
+        "name": "Latakia",
+        "nameAr": "اللاذقية"
+      },
+      {
+        "name": "Tartus",
+        "nameAr": "طرطوس"
+      }
+    ],
+    "phoneCodes": {
+      "011": ["Damascus", "Rural Damascus"],
+      "021": ["Aleppo"],
+      "022": ["Raqqa"],
+      "023": ["Idlib"],
+      "031": ["Homs"],
+      "033": ["Hama"],
+      "041": ["Latakia"],
+      "043": ["Tartus"],
+      "014": ["Quneitra"],
+      "015": ["Daraa"],
+      "016": ["As-Suwayda"],
+      "051": ["Deir ez-Zor"],
+      "052": ["Al-Hasakah"]
+    },
+    "populationByGovernorate": [
+      {
+        "name": "Aleppo",
+        "population": 4868000,
+        "percentage": 22.5
+      },
+      {
+        "name": "Rural Damascus",
+        "population": 2836000,
+        "percentage": 13.1
+      },
+      {
+        "name": "Damascus",
+        "population": 2079000,
+        "percentage": 9.6
+      },
+      {
+        "name": "Homs",
+        "population": 1803000,
+        "percentage": 8.3
+      },
+      {
+        "name": "Hama",
+        "population": 1628000,
+        "percentage": 7.5
+      },
+      {
+        "name": "Al-Hasakah",
+        "population": 1512000,
+        "percentage": 7.0
+      },
+      {
+        "name": "Idlib",
+        "population": 1501000,
+        "percentage": 6.9
+      },
+      {
+        "name": "Deir ez-Zor",
+        "population": 1239000,
+        "percentage": 5.7
+      },
+      {
+        "name": "Daraa",
+        "population": 1027000,
+        "percentage": 4.7
+      },
+      {
+        "name": "Latakia",
+        "population": 1008000,
+        "percentage": 4.7
+      },
+      {
+        "name": "Raqqa",
+        "population": 944000,
+        "percentage": 4.4
+      },
+      {
+        "name": "Tartus",
+        "population": 797000,
+        "percentage": 3.7
+      },
+      {
+        "name": "As-Suwayda",
+        "population": 370000,
+        "percentage": 1.7
+      },
+      {
+        "name": "Quneitra",
+        "population": 90000,
+        "percentage": 0.4
+      }
+    ],
+    "areaByGovernorate": [
+      {
+        "name": "Homs",
+        "area_km2": 42223,
+        "percentage": 22.8
+      },
+      {
+        "name": "Deir ez-Zor",
+        "area_km2": 33060,
+        "percentage": 17.9
+      },
+      {
+        "name": "Al-Hasakah",
+        "area_km2": 23334,
+        "percentage": 12.6
+      },
+      {
+        "name": "Raqqa",
+        "area_km2": 19616,
+        "percentage": 10.6
+      },
+      {
+        "name": "Aleppo",
+        "area_km2": 18482,
+        "percentage": 10.0
+      },
+      {
+        "name": "Rural Damascus",
+        "area_km2": 18032,
+        "percentage": 9.7
+      },
+      {
+        "name": "Hama",
+        "area_km2": 8883,
+        "percentage": 4.8
+      },
+      {
+        "name": "Idlib",
+        "area_km2": 6097,
+        "percentage": 3.3
+      },
+      {
+        "name": "As-Suwayda",
+        "area_km2": 5550,
+        "percentage": 3.0
+      },
+      {
+        "name": "Daraa",
+        "area_km2": 3730,
+        "percentage": 2.0
+      },
+      {
+        "name": "Latakia",
+        "area_km2": 2297,
+        "percentage": 1.2
+      },
+      {
+        "name": "Tartus",
+        "area_km2": 1890,
+        "percentage": 1.0
+      },
+      {
+        "name": "Quneitra",
+        "area_km2": 1861,
+        "percentage": 1.0
+      },
+      {
+        "name": "Damascus",
+        "area_km2": 105,
+        "percentage": 0.1
+      }
+    ]
+  }
+}

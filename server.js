@@ -22,6 +22,33 @@ app.get('/api/governorates', (req, res) => {
     }
 });
 
+app.get('/api/governorates-extended', (req, res) => {
+    try {
+        const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'governorates-extended.json'), 'utf8'));
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to load extended governorates data' });
+    }
+});
+
+app.get('/api/statistics', (req, res) => {
+    try {
+        const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'statistics.json'), 'utf8'));
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to load statistics data' });
+    }
+});
+
+app.get('/api/metadata', (req, res) => {
+    try {
+        const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'data-metadata.json'), 'utf8'));
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to load metadata' });
+    }
+});
+
 app.get('/api/governorates/:governorate', (req, res) => {
     try {
         const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'state-municipality.json'), 'utf8'));

@@ -1,0 +1,40 @@
+{
+  "name": "syrian-administrative-divisions-dataset",
+  "version": "2.0.0",
+  "description": "Comprehensive dataset of Syrian administrative divisions including governorates, districts, municipalities, and geographic data",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "validate": "node validate-data.js",
+    "normalize": "node normalize-data.js",
+    "test": "node validate-data.js"
+  },
+  "keywords": [
+    "syria",
+    "administrative-divisions",
+    "governorates",
+    "geographic-data",
+    "geojson",
+    "demographics",
+    "middle-east",
+    "open-data"
+  ],
+  "author": "Azzam Daaboul",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AzzamDaaboul/Syrian-Administrative-Divisions-Dataset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AzzamDaaboul/Syrian-Administrative-Divisions-Dataset/issues"
+  },
+  "homepage": "https://github.com/AzzamDaaboul/Syrian-Administrative-Divisions-Dataset#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
