@@ -6,7 +6,7 @@
     <title>Syria Administrative Divisions Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <style>
-        body { margin: 0; padding: 0; }
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
         #map { height: 100vh; width: 100%; }
         .info-panel {
             padding: 10px;
@@ -14,13 +14,49 @@
             border-radius: 5px;
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
         }
+        .legend {
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            font-size: 12px;
+            z-index: 1000;
+        }
+        .legend h4 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+        .legend-item {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
     <div id="map"></div>
+    <div class="legend">
+        <h4>Syrian Governorates</h4>
+        <div class="legend-item">📍 Click regions for details</div>
+        <div class="legend-item">🗺️ 14 Governorates</div>
+        <div class="legend-item">👥 ~21.6M Population (2019)</div>
+    </div>
     
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
+        // Load extended governorate data
+        let extendedData = {};
+        
+        fetch('governorates-extended.json')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(gov => {
+                    extendedData[gov.Name.toUpperCase()] = gov;
+                });
+            })
+            .catch(err => console.log('Extended data not available'));
+        
         // Initialize map centered on Syria
         const map = L.map('map').setView([35.0, 38.0], 7);
         
@@ -47,11 +83,27 @@
                     onEachFeature: function(feature, layer) {
                         // Bind popup with information
                         if (feature.properties) {
-                            layer.bindPopup(`
-                                <h3>${feature.properties.name} (${feature.properties.locname})</h3>
-                                <p>Official Name: ${feature.properties.offname}</p>
-                                <p>ISO Code: ${feature.properties.iso3166_2}</p>
-                            `);
+                            const name = feature.properties.name;
+                            const extended = extendedData[name.toUpperCase()];
+                            
+                            let popupContent = `
+                                <div class="info-panel">
+                                    <h3>${feature.properties.name} (${feature.properties.locname})</h3>
+                                    <p><strong>Official Name:</strong> ${feature.properties.offname}</p>
+                                    <p><strong>ISO Code:</strong> ${feature.properties.iso3166_2}</p>`;
+                            
+                            if (extended) {
+                                popupContent += `
+                                    <hr>
+                                    <p><strong>Capital:</strong> ${extended.Capital} (${extended.CapitalAr})</p>
+                                    <p><strong>Population:</strong> ${extended.Population.toLocaleString()} (${extended.PopulationYear})</p>
+                                    <p><strong>Area:</strong> ${extended.Area_km2.toLocaleString()} km²</p>
+                                    <p><strong>Phone Code:</strong> +963 ${extended.PhoneCode}</p>
+                                    <p><strong>Districts:</strong> ${extended.Districts.length}</p>`;
+                            }
+                            
+                            popupContent += `</div>`;
+                            layer.bindPopup(popupContent);
                         }
                     }
                 }).addTo(map);

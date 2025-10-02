@@ -1,0 +1,80 @@
+{
+  "datasetName": "Syrian Administrative Divisions Dataset",
+  "version": "2.0.0",
+  "lastUpdated": "2024-10-02",
+  "description": "Comprehensive dataset of Syrian administrative divisions including governorates, districts, municipalities, and geographic data",
+  "coverage": {
+    "governorates": 14,
+    "districts": 65,
+    "municipalities": 67,
+    "coordinatesCovered": true
+  },
+  "dataSources": [
+    {
+      "name": "Syrian Central Bureau of Statistics",
+      "url": "http://cbssyr.sy/",
+      "dataType": "Population, Administrative divisions",
+      "year": 2019
+    },
+    {
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/",
+      "dataType": "Geographic coordinates, Boundaries",
+      "year": 2024
+    },
+    {
+      "name": "GeoNames",
+      "url": "https://www.geonames.org/",
+      "dataType": "Place names, Coordinates",
+      "year": 2024
+    },
+    {
+      "name": "ISO 3166-2",
+      "url": "https://www.iso.org/",
+      "dataType": "ISO codes for subdivisions",
+      "year": 2024
+    }
+  ],
+  "dataFiles": [
+    {
+      "filename": "state-municipality.json",
+      "description": "Basic governorate and delegation data with coordinates and postal codes",
+      "recordCount": 14,
+      "format": "JSON"
+    },
+    {
+      "filename": "state-municipality-areas.json",
+      "description": "Alternative formatting of governorate and delegation data",
+      "recordCount": 14,
+      "format": "JSON"
+    },
+    {
+      "filename": "governorates-extended.json",
+      "description": "Extended governorate data including population, area, districts, phone codes, and descriptions",
+      "recordCount": 14,
+      "format": "JSON"
+    },
+    {
+      "filename": "syria_administrative_province_state_boundary.geojson",
+      "description": "GeoJSON boundaries for Syrian governorates",
+      "recordCount": 14,
+      "format": "GeoJSON"
+    }
+  ],
+  "dataQuality": {
+    "completeness": "High - All 14 governorates covered",
+    "accuracy": "Geographic coordinates accurate to 5 decimal places",
+    "timeliness": "Population data from 2019, boundaries current as of 2024",
+    "consistency": "Standardized naming conventions across all files"
+  },
+  "license": "Open Data",
+  "maintainer": {
+    "name": "Syrian Administrative Divisions Dataset Project",
+    "contact": "via GitHub repository"
+  },
+  "notes": [
+    "Population figures are estimates from 2019 and may not reflect current demographic changes due to ongoing conflicts",
+    "Some areas have undergone administrative changes that may not be fully reflected in this dataset",
+    "Geographic boundaries are approximations and should not be used for precise legal or military purposes"
+  ]
+}
