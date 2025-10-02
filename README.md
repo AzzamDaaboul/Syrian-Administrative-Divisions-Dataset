@@ -16,6 +16,8 @@ This repository contains comprehensive data on Syrian administrative divisions, 
 - **Population Data**: ~21.6 million (2019 estimates)
 - **Bilingual**: Full English and Arabic support
 
+📋 **[Quick Reference Guide](QUICK_REFERENCE.md)** - All essential info at a glance!
+
 ## Data Files
 
 ### Core Data Files
