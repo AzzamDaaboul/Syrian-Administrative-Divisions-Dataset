@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syrian Administrative Divisions - Data Showcase</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .governorates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gov-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .gov-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .gov-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .gov-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .gov-name-ar {
+            font-size: 1.1em;
+            color: #764ba2;
+        }
+        .gov-detail {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .gov-detail-label {
+            color: #666;
+        }
+        .gov-detail-value {
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            background-color: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🇸🇾 Syrian Administrative Divisions Dataset</h1>
+        <p class="subtitle">Comprehensive Geographic and Demographic Data</p>
+        
+        <div class="stats-grid" id="stats-grid">
+            <!-- Will be populated by JavaScript -->
+        </div>
+
+        <div class="section-title">📊 All Governorates</div>
+        <div class="governorates-grid" id="governorates-grid">
+            <!-- Will be populated by JavaScript -->
+        </div>
+
+        <div class="section-title">📈 Population Rankings</div>
+        <div class="table-container">
+            <table id="population-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Governorate</th>
+                        <th>Arabic Name</th>
+                        <th>Population</th>
+                        <th>% of Total</th>
+                    </tr>
+                </thead>
+                <tbody id="population-tbody">
+                    <!-- Will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section-title">🗺️ Area Rankings</div>
+        <div class="table-container">
+            <table id="area-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Governorate</th>
+                        <th>Area (km²)</th>
+                        <th>% of Total</th>
+                        <th>Districts</th>
+                    </tr>
+                </thead>
+                <tbody id="area-tbody">
+                    <!-- Will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section-title">📞 Phone Area Codes</div>
+        <div class="table-container">
+            <table id="phone-table">
+                <thead>
+                    <tr>
+                        <th>Area Code</th>
+                        <th>Governorate(s)</th>
+                    </tr>
+                </thead>
+                <tbody id="phone-tbody">
+                    <!-- Will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Load and display data
+        Promise.all([
+            fetch('governorates-extended.json').then(r => r.json()),
+            fetch('statistics.json').then(r => r.json())
+        ]).then(([govData, statsData]) => {
+            displayStats(statsData.statistics);
+            displayGovernorates(govData);
+            displayPopulationTable(statsData.statistics.populationByGovernorate);
+            displayAreaTable(govData);
+            displayPhoneTable(statsData.statistics.phoneCodes);
+        });
+
+        function displayStats(stats) {
+            const statsGrid = document.getElementById('stats-grid');
+            statsGrid.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-label">Total Governorates</div>
+                    <div class="stat-value">${stats.numberOfGovernorates}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Total Population</div>
+                    <div class="stat-value">${(stats.totalPopulation / 1000000).toFixed(1)}M</div>
+                    <div class="stat-label">as of ${stats.populationYear}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Total Area</div>
+                    <div class="stat-value">${stats.totalArea_km2.toLocaleString()}</div>
+                    <div class="stat-label">km²</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Districts Covered</div>
+                    <div class="stat-value">${stats.numberOfDistricts}+</div>
+                </div>
+            `;
+        }
+
+        function displayGovernorates(govData) {
+            const grid = document.getElementById('governorates-grid');
+            grid.innerHTML = govData.map(gov => `
+                <div class="gov-card">
+                    <div class="gov-header">
+                        <div class="gov-name">${gov.Name}</div>
+                        <div class="gov-name-ar">${gov.NameAr}</div>
+                    </div>
+                    <div class="gov-detail">
+                        <span class="gov-detail-label">Capital:</span>
+                        <span class="gov-detail-value">${gov.Capital}</span>
+                    </div>
+                    <div class="gov-detail">
+                        <span class="gov-detail-label">Population:</span>
+                        <span class="gov-detail-value">${gov.Population.toLocaleString()}</span>
+                    </div>
+                    <div class="gov-detail">
+                        <span class="gov-detail-label">Area:</span>
+                        <span class="gov-detail-value">${gov.Area_km2.toLocaleString()} km²</span>
+                    </div>
+                    <div class="gov-detail">
+                        <span class="gov-detail-label">Phone Code:</span>
+                        <span class="gov-detail-value">+963 ${gov.PhoneCode}</span>
+                    </div>
+                    <div class="gov-detail">
+                        <span class="gov-detail-label">ISO Code:</span>
+                        <span class="badge">${gov.ISO3166_2}</span>
+                    </div>
+                    <div class="gov-detail">
+                        <span class="gov-detail-label">Districts:</span>
+                        <span class="gov-detail-value">${gov.Districts.length}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function displayPopulationTable(popData) {
+            const tbody = document.getElementById('population-tbody');
+            tbody.innerHTML = popData.map((item, idx) => {
+                // Find corresponding governorate for Arabic name
+                return `
+                    <tr>
+                        <td>${idx + 1}</td>
+                        <td>${item.name}</td>
+                        <td>${item.name === 'Aleppo' ? 'حلب' : item.name === 'Damascus' ? 'دمشق' : '-'}</td>
+                        <td>${item.population.toLocaleString()}</td>
+                        <td>${item.percentage.toFixed(1)}%</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function displayAreaTable(govData) {
+            const tbody = document.getElementById('area-tbody');
+            const sorted = [...govData].sort((a, b) => b.Area_km2 - a.Area_km2);
+            const totalArea = sorted.reduce((sum, g) => sum + g.Area_km2, 0);
+            
+            tbody.innerHTML = sorted.slice(0, 10).map((gov, idx) => `
+                <tr>
+                    <td>${idx + 1}</td>
+                    <td>${gov.Name}</td>
+                    <td>${gov.Area_km2.toLocaleString()}</td>
+                    <td>${((gov.Area_km2 / totalArea) * 100).toFixed(1)}%</td>
+                    <td>${gov.Districts.length}</td>
+                </tr>
+            `).join('');
+        }
+
+        function displayPhoneTable(phoneCodes) {
+            const tbody = document.getElementById('phone-tbody');
+            tbody.innerHTML = Object.entries(phoneCodes).map(([code, govs]) => `
+                <tr>
+                    <td><strong>+963 ${code}</strong></td>
+                    <td>${govs.join(', ')}</td>
+                </tr>
+            `).join('');
+        }
+    </script>
+</body>
+</html>

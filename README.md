@@ -84,6 +84,15 @@ This repository contains comprehensive data on Syrian administrative divisions, 
 
 Open `index.html` in your browser to view an interactive map of Syrian administrative divisions with clickable regions.
 
+### Data Showcase
+
+Open `demo.html` in your browser to view a comprehensive showcase of all dataset statistics, including:
+- Overview statistics (governorates, population, area, districts)
+- All governorates with detailed information cards
+- Population rankings table
+- Area rankings table
+- Phone area codes reference
+
 ### REST API
 
 Start the server to access the data through a REST API:
